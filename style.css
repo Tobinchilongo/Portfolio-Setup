@@ -1,71 +1,71 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-    padding: 24px;
+  padding: 24px;
 }
 
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 header h2 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 header .fa-bars {
-    font-weight: 500;
-    font-size: 20px;
-    cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .home-page {
-    background-image: url(./IMG/header.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 30px 0;
+  background-image: url(./IMG/header.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 0;
 }
 
 .intro {
-  
-font-size: 40px;
-margin-bottom: 58px;
-margin-top: 65px;
-text-align: center;
+  font-size: 40px;
+  margin-bottom: 58px;
+  margin-top: 65px;
+  text-align: center;
 }
+
 h1 span {
-    color: #36B37E;
+  color: #36b37e;
 }
 
 .info {
-    color: #172b4d;
-    text-align: center;
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 60px;
+  color: #172b4d;
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 60px;
 }
 
 .icon-list {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .icon-list li {
-    list-style: none;
-    margin-right: 19px;
+  list-style: none;
+  margin-right: 19px;
 }
 
 .icon-list a {
-    font-size: 25px;
+  font-size: 25px;
 }
