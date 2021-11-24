@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-body {
-  padding: 24px;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 a {
@@ -34,12 +37,16 @@ header .fa-bars {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 30px 0;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
 }
 
 .intro {
   font-size: 40px;
-  margin-bottom: 58px;
   margin-top: 65px;
   text-align: center;
 }
@@ -53,7 +60,12 @@ h1 span {
   text-align: center;
   font-size: 20px;
   line-height: 28px;
+  margin-top: 45px;
   margin-bottom: 60px;
+  width: 327px;
+  height: 164px;
+  padding: 0 18px;
+
 }
 
 .icon-list {
@@ -68,4 +80,5 @@ h1 span {
 
 .icon-list a {
   font-size: 25px;
+  color: #505f79;
 }
