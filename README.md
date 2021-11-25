@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> One paragraph statement about the project.
+> This is my portfolio website showcasing my work as a web developer
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,27 +10,28 @@ Additional description about the project and its features.
 
 ## Built With
 
-- HTML-CSS
+- HTML
+- CSS
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
--Flexbox
--Linters
--Figma
--GitHub Flow
+- Flexbox
+- Linters
+- Figma
+- GitHub Flow
 
 ### Install
-git clone git@github.com:Tobinchilongo/Portfolio-Setup.git
+git clone https://github.com/Tobinchilongo/Portfolio-Setup
 cd Portfolio-Setup
 
 ## Authors
 
 👤 Tobin Chilongo Jnr
 
-- GitHub: [@githubhandle](https://github.com/Tobinchilongo)
-- Twitter: [@twitterhandle](https://twitter.com/Tobin_Official)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tobin-chilongo-a6736415a/)
+- GitHub: [@Tobinchilongo](https://github.com/Tobinchilongo)
+- Twitter: [@Tobin_Official](https://twitter.com/Tobin_Official)
+- LinkedIn: [@Tobin Chilongo](https://www.linkedin.com/in/tobin-chilongo-a6736415a/)
 
 
 ## 🤝 Contributing
@@ -43,9 +44,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- W3schools for references
+- MDN Documentation for references and research
 
 ## 📝 License
 

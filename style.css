@@ -5,31 +5,37 @@
   font-family: "Inter", sans-serif;
 }
 
-nav {
+/* nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
+} */
 
 header {
   display: flex;
   justify-content: space-between;
+  margin: 24px 24px 0 24px;
 }
 
-header h2 {
+.logo {
+  color: #28352f;
   font-weight: 600;
+  font-size: 20px;
+  width: 90px;
+  height: 28px;
 }
 
-header .fa-bars {
+a {
+  color: #28352f;
+  text-decoration: none;
+}
+
+nav .fa-bars {
   font-weight: 500;
   font-size: 20px;
   cursor: pointer;
+  color: #28352f;
 }
 
 .home-page {
@@ -37,18 +43,19 @@ header .fa-bars {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.container {
-  flex-direction: column;
-  align-items: center;
+  padding: 20px 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .intro {
   font-size: 40px;
-  margin-top: 65px;
+  margin-top: 38px;
+  margin-right: 14px;
   text-align: center;
+  color: #172b4d;
 }
 
 h1 span {
@@ -60,10 +67,12 @@ h1 span {
   text-align: center;
   font-size: 20px;
   line-height: 28px;
-  margin-top: 45px;
-  margin-bottom: 60px;
-  width: 327px;
-  height: 164px;
+  font-weight: 400;
+  margin-top: 35px;
+  margin-bottom: 50px;
+
+  /* width: 327px;
+  height: 192px; */
   padding: 0 18px;
 }
 
