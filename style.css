@@ -95,7 +95,7 @@ h1 span {
   color: #505f79;
 }
 
-/*---- Work section----*/
+/* ---- Work section---- */
 
 .work-section {
   padding: 15px;
@@ -136,11 +136,10 @@ h1 span {
 
 .project-card {
   margin: 5px auto;
-  border: 2px solid #EBF0EE;
+  border: 2px solid #ebf0ee;
   border-radius: 8px;
   height: 474px;
-width: 327px;
-
+  width: 327px;
 }
 
 .project-card img {
@@ -164,12 +163,12 @@ width: 327px;
 
 .project-technologies {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
   margin: 15px 0;
 }
 
 .project-technologies li {
-  background: #EBF0EE;
+  background: #ebf0ee;
   padding: 8px;
   border-radius: 4px;
   font-weight: 600;
@@ -207,14 +206,8 @@ width: 327px;
   font-size: 20px;
   line-height: 32px;
   color: #42526e;
-}
-
-.section-paragraph p {
-  position: static;
   width: 351px;
   height: 189px;
-  left: 0px;
-  top: 72px;
 }
 
 .about-section {
@@ -252,11 +245,12 @@ width: 327px;
   display: flex;
   justify-content: center;
 }
+
 .tec-btns {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .tec-btns li {
@@ -286,11 +280,11 @@ width: 327px;
 
 .about-me-btn {
   border-bottom: 8px;
-    background-color: #ebf0ee;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-text {
