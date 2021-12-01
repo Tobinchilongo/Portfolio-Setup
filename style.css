@@ -331,10 +331,12 @@ h1 span {
   margin: 30px;
   background: #36b37f;
   border-radius: 4px;
+  outline: none;
+  border: none;
 }
 
 .btn-form:hover {
-  opacity: 0.9;
+  color: #36b37f;
 }
 
 /* Bottom navigation */
