@@ -336,7 +336,9 @@ h1 span {
 }
 
 .btn-form:hover {
-  color: #36b37f;
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  cursor: pointer;
 }
 
 /* Bottom navigation */
