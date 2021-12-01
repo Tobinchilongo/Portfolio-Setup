@@ -283,3 +283,77 @@ h1 span {
   color: #172b4d;
   margin-top: 14px;
 }
+
+/* Form section */
+.form-section {
+  margin: 110px 24px 0 24px;
+}
+
+.form-iner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  list-style: none;
+}
+
+.form-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+  text-align: center;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  width: 100%;
+  padding: 15px 16px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #6b778c;
+  margin: 10px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+}
+
+.btn-form {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  padding: 12px;
+  margin: 30px;
+  background: #36b37f;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+.btn-form:hover {
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  cursor: pointer;
+}
+
+/* Bottom navigation */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 24px 40px 24px;
+}
+
+.email-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #42526e;
+  text-align: center;
+  padding: 5px;
+  margin: 5px 0 200px 0;
+}
