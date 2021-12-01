@@ -17,10 +17,15 @@
     <header>
         <h2 class="logo"><a href="#">Welcome</a></h2>
         <nav>
-        <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-bars mobile-nav" aria-hidden="true"></i>
+            <ul class="desk-nav">
+                <li><a href="#portfolio-section">Portfolio</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <section class="home-page">
+    <section id="portfolio-section" class="home-page">
         <div class="welcome-text">
             <h1 class="intro">Hey there. I’m Tobin <br /><span>I’m a software<br/>developer</span></h1>
             <p class="info">
@@ -151,20 +156,20 @@
         </div>
 
     </section>
-    <section class="about-section">
+    <section id="about-section" class="about-section">
         <div class="section-title">
             <h2 class="about-heading">About Me</h2>
         </div>
         <div class="section-paragraph">
             <p class="about-text"> I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                don’t hestiate to contact me.</p>
+                don’t hesitate to contact me.</p>
         </div> 
         <div class="project-btn">
             <button type="button">Get My Resume</button>
         </div>
     </section>
     <section class="about">
-        <ul>
+        <ul class="d-flex">
             <li class="tech-list">
                 <img src="./IMG/img/icon-languages.svg" alt="#">
                 <div class="about-me-btn">
@@ -205,12 +210,13 @@
             </li>
         </ul>
     </section>
-    <section class="form-section">
+    <footer id="contact-section" class="footer-nav">
+        <div class="footer-grid">
         <ul class="form-iner">
-            <li>
+            <li class="left">
               <h2 class="form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             </li>
-            <li>
+            <li class="right">
               <form action="https://formspree.io/f/xyyoglkw" method="post" class="message-form">
                 <input type="text" name="name" placeholder="Name" maxlength="30" required class="form-control">
                 <input type="email" name="email" placeholder="Email" maxlength="30" required class="form-control">
@@ -219,9 +225,9 @@
               </form>
             </li>
           </ul>
-    </section>
-    <footer class="footer-nav">
-        <ul class="icon-list">
+        </div>
+    
+        <ul class="icon-list icons-desktop">
             <li>
             <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
             </li>
