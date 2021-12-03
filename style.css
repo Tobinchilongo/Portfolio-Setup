@@ -5,6 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -17,6 +21,11 @@ header {
   font-size: 20px;
   width: 90px;
   height: 28px;
+  display: block;
+}
+
+.desk-nav {
+  display: none;
 }
 
 ul {
@@ -33,10 +42,11 @@ nav .fa-bars {
   font-size: 20px;
   cursor: pointer;
   color: #28352f;
+  display: block;
 }
 
 .home-page {
-  background-image: url(./IMG/header.png);
+  background-image: url(./IMG/img/desktop.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,6 +78,7 @@ h1 span {
   margin-top: 35px;
   margin-bottom: 50px;
   padding: 0 18px;
+  width: 380px;
 }
 
 .icon-list {
@@ -231,7 +242,14 @@ h1 span {
 
 .about {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .tec-btns {
@@ -292,8 +310,16 @@ h1 span {
 .form-iner {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   list-style: none;
+}
+
+.left {
+  width: 100%;
+}
+
+.right {
+  width: 100%;
 }
 
 .form-title {
@@ -345,7 +371,7 @@ h1 span {
 .footer-nav {
   display: flex;
   flex-direction: column;
-  margin: 15px 24px 40px 24px;
+  margin: 15px 24px 10px 24px;
 }
 
 .email-title {
@@ -355,5 +381,136 @@ h1 span {
   color: #42526e;
   text-align: center;
   padding: 5px;
-  margin: 5px 0 200px 0;
+  margin: 5px 0 10px 0;
+}
+
+hr {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    justify-content: center;
+  }
+
+  .desk-nav {
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: transparent;
+    position: static;
+  }
+
+  .desk-nav li {
+    margin: 0 10px;
+    font-weight: bold;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav .fa-bars {
+    display: none;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .d-flex {
+    flex-direction: row;
+  }
+
+  .info {
+    width: 750px;
+  }
+
+  .section-paragraph p {
+    width: 850px;
+  }
+
+  .footer-nav {
+    margin-top: 10%;
+    background-image:
+      url("IMG/img/imgSub/footing-bg-1-desktop.svg"),
+      url("IMG/img/imgSub/footing-bg-2-desktop.svg"),
+      url("IMG/img/imgSub/footing-bg-3-desktop.svg");
+    background-position: bottom left, 13rem bottom, bottom right;
+    background-size: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+  }
+
+  .footer-grid {
+    display: flex;
+    width: 85%;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 195px;
+    margin-top: 0;
+    justify-content: space-around;
+  }
+
+  .form-title {
+    flex: 40%;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
+    align-self: center;
+    padding: 30px 0 30px 0;
+  }
+
+  .message-form {
+    flex: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .input1 {
+    flex: 45%;
+  }
+
+  .input2 {
+    flex: 45%;
+    align-self: flex-end;
+  }
+
+  .input3,
+  .input4 {
+    flex: 100%;
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #dfe1e6;
+    margin: 20px 0 10px 0;
+    padding: 0;
+  }
+
+  .icon-list {
+    margin-bottom: 20px;
+  }
+
+  .fa {
+    font-size: 20px;
+  }
+
+  .email-title {
+    display: none;
+  }
+
+  .btn-form {
+    margin: 10px;
+  }
 }
