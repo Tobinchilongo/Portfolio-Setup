@@ -487,11 +487,24 @@ h1 span {
     flex: 100%;
   }
 
-  .icon-list {
-    margin-bottom: 23%;
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #dfe1e6;
+    margin: 20px 0 10px 0;
+    padding: 0;
   }
 
-  .icons-desktop {
-    margin-bottom: 0;
+  .icon-list {
+    margin-bottom: 20px;
+  }
+
+  .fa {
+    font-size: 20px;
+  }
+
+  .email-title {
+    display: none;
   }
 }
