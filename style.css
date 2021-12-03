@@ -473,12 +473,10 @@ h1 span {
 
   .input1 {
     flex: 45%;
-    max-width: 330px;
   }
 
   .input2 {
     flex: 45%;
-    max-width: 330px;
     align-self: flex-end;
   }
 
@@ -508,7 +506,7 @@ h1 span {
     display: none;
   }
 
-  .btn-form{
+  .btn-form {
     margin: 10px;
   }
 }
