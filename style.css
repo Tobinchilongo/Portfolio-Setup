@@ -386,8 +386,6 @@ h1 span {
 
 @media screen and (min-width: 992px) {
   header {
-    position: sticky;
-    top: 0;
     justify-content: center;
   }
 
