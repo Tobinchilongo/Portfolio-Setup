@@ -507,4 +507,8 @@ h1 span {
   .email-title {
     display: none;
   }
+
+  .btn-form{
+    margin: 10px;
+  }
 }
