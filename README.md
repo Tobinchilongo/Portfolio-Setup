@@ -6,8 +6,7 @@
 
 ![screenshot](./app_screenshot.png)
 
-## Live Demo
-[Click here](https://tobinchilongo.github.io/Portfolio-Setup/)
+
 
 Additional description about the project and its features.
 
