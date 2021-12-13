@@ -62,7 +62,7 @@ html {
   display: none;
 }
 
-ul {
+.navbar ul {
   list-style: none;
 }
 
@@ -244,7 +244,8 @@ h1 span {
 }
 
 .about-section {
-  background-image: url(./IMG/img/illustration2.svg),
+  background-image:
+    url(./IMG/img/illustration2.svg),
     url(./IMG/img/illustration.svg);
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
@@ -470,7 +471,8 @@ hr {
 
   .footer-nav {
     margin-top: 10%;
-    background-image: url("IMG/img/imgSub/footing-bg-1-desktop.svg"),
+    background-image:
+      url("IMG/img/imgSub/footing-bg-1-desktop.svg"),
       url("IMG/img/imgSub/footing-bg-2-desktop.svg"),
       url("IMG/img/imgSub/footing-bg-3-desktop.svg");
     background-position: bottom left, 13rem bottom, bottom right;
