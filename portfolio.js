@@ -1,15 +1,15 @@
-let menu_button = document.querySelector(".mobile-nav");
-menu_button.addEventListener("click", openMenu);
+const menuButton = document.querySelector('.mobile-nav');
+menuButton.addEventListener('click', openMenu);
 
 function openMenu() {
-  let mobile_menu = document.querySelector(".navbar-mobile");
-  mobile_menu.classList.remove("navbar_hidden");
+  const mobileMenu = document.querySelector('.navbar-mobile');
+  mobileMenu.classList.remove('navbar_hidden');
 }
-
-let menu_close_button = document.querySelector(".navbar-mobile-close");
-menu_close_button.addEventListener("click", closeMenu);
 
 function closeMenu() {
-  let mobile_navbar = document.querySelector(".navbar-mobile");
-  mobile_navbar.classList.add("navbar_hidden");
-}
+    const mobileNavbar = document.querySelector('.navbar-mobile');
+    mobileNavbar.classList.add('navbar_hidden');
+  }
+const menuCloseButton = document.querySelector('.navbar-mobile-close');
+menuCloseButton.addEventListener('click', closeMenu);
+
