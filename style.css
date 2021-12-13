@@ -9,10 +9,44 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
+.header_container {
   display: flex;
   justify-content: space-between;
   margin: 24px 24px 0 24px;
+}
+
+.nav_link_mobile {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #3a4a42;
+  text-decoration: none;
+  margin-left: 28px;
+}
+
+.navbar-mobile-close {
+  text-align: right;
+  padding: 10px;
+  color: #67798e;
+}
+
+.navbar-mobile li {
+  margin-bottom: 40px;
+}
+
+.navbar-mobile ul {
+  list-style: none;
+}
+
+.navbar_hidden {
+  display: none;
+}
+
+.navbar-mobile {
+  width: 92%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
 }
 
 .logo {
@@ -210,7 +244,8 @@ h1 span {
 }
 
 .about-section {
-  background-image: url(./IMG/img/illustration2.svg), url(./IMG/img/illustration.svg);
+  background-image: url(./IMG/img/illustration2.svg),
+    url(./IMG/img/illustration.svg);
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
   position: relative;
@@ -389,7 +424,7 @@ hr {
 }
 
 @media screen and (min-width: 992px) {
-  header {
+  .header_container {
     justify-content: center;
   }
 
@@ -435,8 +470,7 @@ hr {
 
   .footer-nav {
     margin-top: 10%;
-    background-image:
-      url("IMG/img/imgSub/footing-bg-1-desktop.svg"),
+    background-image: url("IMG/img/imgSub/footing-bg-1-desktop.svg"),
       url("IMG/img/imgSub/footing-bg-2-desktop.svg"),
       url("IMG/img/imgSub/footing-bg-3-desktop.svg");
     background-position: bottom left, 13rem bottom, bottom right;
