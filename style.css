@@ -429,6 +429,10 @@ hr {
     justify-content: center;
   }
 
+  .navbar-mobile {
+    display: none;
+  }
+
   .desk-nav {
     align-items: center;
     list-style: none;

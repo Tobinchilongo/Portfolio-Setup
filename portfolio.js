@@ -11,3 +11,6 @@ function closeMenu() {
 }
 const menuCloseButton = document.querySelector('.navbar-mobile-close');
 menuCloseButton.addEventListener('click', closeMenu);
+
+const linkMobile = document.querySelectorAll('.nav_link_mobile');
+linkMobile.forEach((element) => element.addEventListener('click', closeMenu));
