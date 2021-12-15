@@ -169,15 +169,17 @@ closeBtn.addEventListener('click', closePopup);
 
 const errorMessage = document.getElementById('errorMessage');
 errorMessage.addEventListener('submit', (event) => {
-  const email = errorMessage.elements['email'];
-  let emailAddress = email.value;
-  console.log(emailAddress)
-  var filter = /^([a-z@.0-9]{0,})+$/;
+  const { email } = errorMessage.elements;
+  // const emailAddress = email.value;
+  const filter = /^([a-z@.0-9]{0,})+$/;
 
-  if (!filter.test(email.value)) {event.preventDefault()
-    const message = document.getElementById('email-message')
-    message.classList.remove('message-info')
-}
-else{errorMessage.submit();}
+  if (!filter.test(email.value)) {
+    event.preventDefault();
+    const message = document.getElementById('email-message');
+    message.classList.remove('message-info');
+
+    setTimeout(() => {
+      message.classList.add('message-info');
+    }, 3000);
+  } else { errorMessage.submit(); }
 });
-

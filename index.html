@@ -215,7 +215,6 @@
             maxlength="30"
             required
             class="form-control input3"
-            pattern="[a-z@.0-9]{0,}"
           />
           <textarea
             name="message"
@@ -225,7 +224,7 @@
             required
             class="form-control input4"
           ></textarea>
-          <small id="email-message" class="message-info">Your email value is invalid</small>
+          <div id="email-message" class="message-info error">email is invalid don't remove uppercase</div>
           <button type="submit" class="btn-form input5">Get in touch</button>
         </form>
       </div>

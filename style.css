@@ -561,6 +561,14 @@ hr {
   display: none;
 }
 
+.error {
+  background-color: red;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
 @media screen and (min-width: 992px) {
   .header_container {
     justify-content: center;
