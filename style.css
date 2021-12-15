@@ -252,8 +252,7 @@ h1 span {
 }
 
 .about-section {
-  background-image:
-    url(./IMG/img/illustration2.svg),
+  background-image: url(./IMG/img/illustration2.svg),
     url(./IMG/img/illustration.svg);
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
@@ -433,6 +432,120 @@ hr {
   display: none;
 }
 
+/* POPUP WINDOW */
+
+.popup-data {
+  width: 95%;
+  margin: 20px auto;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px 80px 15px;
+  border-radius: 16px;
+}
+
+.popup-hidden {
+  display: none;
+}
+
+.bottom-card h2 {
+  color: #172b4d;
+}
+
+.bottom-card p {
+  color: #344563;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.language-content {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.lc1,
+.lc2,
+.lc3 {
+  background-color: #ebf0ee;
+  margin: 10px 10px 10px 0;
+  padding: 5px 5px 5px 0;
+}
+
+.live-button {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background-color: #36b37f;
+  color: #ebf0ee;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.source-button {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background-color: #36b37f;
+  color: #ebf0ee;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.img {
+  border-radius: 8px;
+  margin-bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.desktop-image {
+  display: none;
+}
+
+.close_popup_desktop {
+  display: none;
+}
+
+.close_popup_mobile {
+  display: block;
+  background-color: chartreuse;
+}
+
+.popup-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(182, 177, 177, 0.801);
+  width: 100%;
+  overflow-y: scroll;
+}
+
 @media screen and (min-width: 992px) {
   .header_container {
     justify-content: center;
@@ -484,8 +597,7 @@ hr {
 
   .footer-nav {
     margin-top: 10%;
-    background-image:
-      url("IMG/img/imgSub/footing-bg-1-desktop.svg"),
+    background-image: url("IMG/img/imgSub/footing-bg-1-desktop.svg"),
       url("IMG/img/imgSub/footing-bg-2-desktop.svg"),
       url("IMG/img/imgSub/footing-bg-3-desktop.svg");
     background-position: bottom left, 13rem bottom, bottom right;

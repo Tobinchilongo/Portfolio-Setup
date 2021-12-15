@@ -1,24 +1,24 @@
 function openMenu() {
-  const mobileMenu = document.querySelector('.navbar-mobile');
-  mobileMenu.classList.remove('navbar_hidden');
+  const mobileMenu = document.querySelector(".navbar-mobile");
+  mobileMenu.classList.remove("navbar_hidden");
 }
-const menuButton = document.querySelector('.mobile-nav');
-menuButton.addEventListener('click', openMenu);
+const menuButton = document.querySelector(".mobile-nav");
+menuButton.addEventListener("click", openMenu);
 
 function closeMenu() {
-  const mobileNavbar = document.querySelector('.navbar-mobile');
-  mobileNavbar.classList.add('navbar_hidden');
+  const mobileNavbar = document.querySelector(".navbar-mobile");
+  mobileNavbar.classList.add("navbar_hidden");
 }
-const menuCloseButton = document.querySelector('.navbar-mobile-close');
-menuCloseButton.addEventListener('click', closeMenu);
+const menuCloseButton = document.querySelector(".navbar-mobile-close");
+menuCloseButton.addEventListener("click", closeMenu);
 
-const linkMobile = document.querySelectorAll('.nav_link_mobile');
-linkMobile.forEach((element) => element.addEventListener('click', closeMenu));
+const linkMobile = document.querySelectorAll(".nav_link_mobile");
+linkMobile.forEach((element) => element.addEventListener("click", closeMenu));
 
 // WINDOWS POPUP
 const project1 = {
   index: 0,
-  name: "Projet 1",
+  name: "Multi-Post Stories Gain+Glory",
   technologies: ["H1", "H2", "H3", "Html"],
   image: "portfolio.png",
   description: "lorem",
@@ -77,21 +77,6 @@ const project6 = {
 };
 
 const projects = [project1, project2, project3, project4, project5, project6];
-<div class="project-card">
-          <img src="IMG/Plaholder.png" alt="Project image" />
-          <div class="card-title">
-            <h4>Multi-Post Stories Gain+Glory</h4>
-          </div>
-          <ul class="project-technologies">
-            <li>Ruby on rails</li>
-            <li>JavaScript</li>
-            <li>css</li>
-            <li>html</li>
-          </ul>
-          <div class="project-btn">
-            <button type="button">See Project</button>
-          </div>
-        </div>
 
 for (let i = 0; i < projects.length; i += 1) {
   const cardList = document.querySelector(".project-container");
@@ -100,8 +85,8 @@ for (let i = 0; i < projects.length; i += 1) {
   cardList.appendChild(card);
 
   const cardImage = document.createElement("img");
-  cardImage.setAttribute('src','IMG/Plaholder.png')
-  cardImage.setAttribute('alt','Project image')
+  cardImage.setAttribute("src", "IMG/Plaholder.png");
+  cardImage.setAttribute("alt", "Project image");
   card.appendChild(cardImage);
 
   const cardData = document.createElement("div");
@@ -114,7 +99,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
   const cardDataUl = document.createElement("ul");
   cardDataUl.classList.add("project-technologies");
-  cardData.appendChild(cardDataUl);
+  card.appendChild(cardDataUl);
 
   for (let j = 0; j < projects[i].technologies.length; j += 1) {
     const cardDataLi = document.createElement("li");
@@ -124,13 +109,13 @@ for (let i = 0; i < projects.length; i += 1) {
 
   const cardDataDiv = document.createElement("div");
   cardDataDiv.classList.add("project-btn");
-  cardData.appendChild(cardDataDiv);
+  card.appendChild(cardDataDiv);
 
   const cardDataButton = document.createElement("button");
   cardDataButton.setAttribute("type", "submit");
   cardDataButton.setAttribute("index-project", projects[i].index);
   cardDataButton.innerText = "See Project";
-  cardData.appendChild(cardDataButton);
+  cardDataDiv.appendChild(cardDataButton);
 }
 
 function openPopup() {
