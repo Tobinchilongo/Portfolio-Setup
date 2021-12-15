@@ -115,6 +115,8 @@ for (let i = 0; i < projects.length; i += 1) {
   cardDataButton.setAttribute("type", "submit");
   cardDataButton.setAttribute("index-project", projects[i].index);
   cardDataButton.innerText = "See Project";
+  cardDataButton.classList.add("button");
+
   cardDataDiv.appendChild(cardDataButton);
 }
 
@@ -124,9 +126,9 @@ function openPopup() {
   const popup = document.querySelector(".popup-modal-bg");
   popup.querySelector("h2").innerText = projects[indexProject].name;
   popup.querySelector(".mobile-image").src =
-    "projects/mobile_" + projects[indexProject].image;
+    "Projects/mobile_" + projects[indexProject].image;
   popup.querySelector(".desktop-image").src =
-    "projects/" + projects[indexProject].image;
+    "Projects/" + projects[indexProject].image;
   popup.querySelector("p").innerHTML = projects[indexProject].description;
 
   const techContainer = popup.querySelector(".language-content");

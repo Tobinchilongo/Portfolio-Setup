@@ -546,12 +546,38 @@ hr {
   overflow-y: scroll;
 }
 
+.mobile-image {
+  display: block;
+}
+
+.project-images {
+  justify-content: end;
+  display: flex;
+}
+
 @media screen and (min-width: 992px) {
   .header_container {
     justify-content: center;
   }
 
   .navbar-mobile {
+    display: none;
+  }
+
+  .desktop-image {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .close_popup_desktop {
+    display: block;
+  }
+
+  .close_popup_mobile {
     display: none;
   }
 
