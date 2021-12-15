@@ -433,13 +433,160 @@ hr {
   display: none;
 }
 
+/* POPUP WINDOW */
+
+.popup-data {
+  width: 95%;
+  margin: 20px auto;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px 80px 15px;
+  border-radius: 16px;
+}
+
+.popup-hidden {
+  display: none;
+}
+
+.bottom-card h2 {
+  color: #172b4d;
+}
+
+.bottom-card p {
+  color: #344563;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.language-content {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.lc1,
+.lc2,
+.lc3 {
+  background-color: #ebf0ee;
+  margin: 10px 10px 10px 0;
+  padding: 5px 5px 5px 0;
+}
+
+.live-button {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background-color: #36b37f;
+  color: #ebf0ee;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.source-button {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background-color: #36b37f;
+  color: #ebf0ee;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.img {
+  border-radius: 8px;
+  margin-bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.desktop-image {
+  display: none;
+}
+
+.close_popup_desktop {
+  display: none;
+}
+
+.popup-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(182, 177, 177, 0.801);
+  width: 100%;
+  overflow-y: scroll;
+  z-index: 999;
+}
+
+.mobile-image {
+  display: block;
+  width: 100%;
+}
+
+.project-images {
+  justify-content: end;
+  display: flex;
+}
+
+.popup-buttons {
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 992px) {
   .header_container {
     justify-content: center;
   }
 
+  .popup-dflex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup-buttons {
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+
   .navbar-mobile {
     display: none;
+  }
+
+  .desktop-image {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .close_popup_desktop {
+    display: block;
   }
 
   .desk-nav {
