@@ -162,3 +162,7 @@ const closeButtons = document.querySelectorAll(
 );
 
 closeButtons.forEach((element) => element.addEventListener('click', closePopup));
+
+const closeBtn = document.getElementById('close-btn');
+
+closeBtn.addEventListener('click', closePopup );
