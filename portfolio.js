@@ -166,3 +166,18 @@ closeButtons.forEach((element) => element.addEventListener('click', closePopup))
 const closeBtn = document.getElementById('close-btn');
 
 closeBtn.addEventListener('click', closePopup);
+
+const errorMessage = document.getElementById('errorMessage');
+errorMessage.addEventListener('submit', (event) => {
+  const email = errorMessage.elements['email'];
+  let emailAddress = email.value;
+  console.log(emailAddress)
+  var filter = /^([a-z@.0-9]{0,})+$/;
+
+  if (!filter.test(email.value)) {event.preventDefault()
+    const message = document.getElementById('email-message')
+    message.classList.remove('message-info')
+}
+else{errorMessage.submit();}
+});
+
