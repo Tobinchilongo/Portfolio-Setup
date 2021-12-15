@@ -165,4 +165,4 @@ closeButtons.forEach((element) => element.addEventListener('click', closePopup))
 
 const closeBtn = document.getElementById('close-btn');
 
-closeBtn.addEventListener('click', closePopup );
+closeBtn.addEventListener('click', closePopup);
