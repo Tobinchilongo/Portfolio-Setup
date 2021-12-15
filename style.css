@@ -530,11 +530,6 @@ hr {
   display: none;
 }
 
-.close_popup_mobile {
-  display: block;
-  background-color: chartreuse;
-}
-
 .popup-modal-bg {
   position: fixed;
   top: 0;
@@ -544,10 +539,12 @@ hr {
   background-color: rgba(182, 177, 177, 0.801);
   width: 100%;
   overflow-y: scroll;
+  z-index: 999;
 }
 
 .mobile-image {
   display: block;
+  width: 100%;
 }
 
 .project-images {
@@ -555,9 +552,24 @@ hr {
   display: flex;
 }
 
+.popup-buttons {
+  margin-top: 20px;
+}
+
+
 @media screen and (min-width: 992px) {
   .header_container {
     justify-content: center;
+  }
+
+  .popup-dflex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .popup-buttons {
+    margin-top: 20px;
+    flex-shrink: 0;
   }
 
   .navbar-mobile {
@@ -575,10 +587,6 @@ hr {
 
   .close_popup_desktop {
     display: block;
-  }
-
-  .close_popup_mobile {
-    display: none;
   }
 
   .desk-nav {
