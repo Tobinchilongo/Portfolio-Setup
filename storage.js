@@ -13,7 +13,6 @@ if (localStorage.getItem('formData') != null) {
   form.email.value = formData.email;
   form.message.value = formData.message;
   form.lastname.value = formData.lastName;
-  console.log(form);
 }
 
 form.addEventListener('change', () => {
@@ -21,5 +20,5 @@ form.addEventListener('change', () => {
   formData.email = form.email.value;
   formData.message = form.message.value;
   formData.lastName = form.lastname.value;
-  localStorage.setItem("formData", JSON.stringify(formData));
+  localStorage.setItem('formData', JSON.stringify(formData));
 });
