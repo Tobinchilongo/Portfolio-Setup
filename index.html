@@ -88,10 +88,7 @@
     <div class="popup-modal-bg popup-hidden">
       <div class="popup-data">
         <div class="project-images">
-          <img id="close-btn"
-            src="IMG/desktopDisabled.png"
-            alt="close popup"
-          />
+          <img id="close-btn" src="IMG/desktopDisabled.png" alt="close popup" />
         </div>
         <div class="img">
           <img class="mobile-image" src="#" alt="image project on mobile" />
@@ -190,7 +187,7 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h2>
-        <form
+        <form id="errorMessage"
           action="https://formspree.io/f/xyyoglkw"
           method="post"
           class="message-form"
@@ -227,6 +224,7 @@
             required
             class="form-control input4"
           ></textarea>
+          <div id="email-message" class="message-info error">email is invalid don't remove uppercase</div>
           <button type="submit" class="btn-form input5">Get in touch</button>
         </form>
       </div>

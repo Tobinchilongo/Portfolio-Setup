@@ -166,3 +166,20 @@ closeButtons.forEach((element) => element.addEventListener('click', closePopup))
 const closeBtn = document.getElementById('close-btn');
 
 closeBtn.addEventListener('click', closePopup);
+
+const errorMessage = document.getElementById('errorMessage');
+errorMessage.addEventListener('submit', (event) => {
+  const { email } = errorMessage.elements;
+  // const emailAddress = email.value;
+  const filter = /^([a-z@.0-9]{0,})+$/;
+
+  if (!filter.test(email.value)) {
+    event.preventDefault();
+    const message = document.getElementById('email-message');
+    message.classList.remove('message-info');
+
+    setTimeout(() => {
+      message.classList.add('message-info');
+    }, 3000);
+  } else { errorMessage.submit(); }
+});
